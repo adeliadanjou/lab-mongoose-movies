@@ -1,19 +1,35 @@
-<h2>All The Celebrities</h2>
-
+<div class="theCelebrities">
+<h2 class="celebrities-title">The Celebrities:</h2>
+<div class="celebrities-cards">
 {{#each celebrities}}
-<a href="/celebrities/{{this.id}}">{{this.name}}</a>
+<div class="celebrity-card">
+<img class="celebrity-img" src="{{this.image}}" alt="imagen">
+<p class="celebrity-name">{{this.name}}</p>
+<a class="celebrity-details" href="/celebrities/{{this.id}}">(Show details)</a>
+
+
+{{!-- EDIT CELEBS: --}}
+<div class="edit-div">
+   <img class="icon-img" src="/images/edit-button.png" alt="">
+    <a class="name" href="celebrities/{{this.id}}/edit"> EDIT</a>
+</div>
 
  {{!-- DELETE CELEBS: --}}
 
-<form action="celebrities/{{this.id}}/delete" method="POST">
-   <button>DELETE</button>
+<form class="delete-div" action="celebrities/{{this.id}}/delete" method="POST">
+   <img class="icon-img" src="/images/delete.png" alt="delete-x">
+   <button class="name">DELETE</button>
 </form>
 
-{{!-- EDIT CELEBS: --}}
 
-   <a href="celebrities/{{this.id}}/edit"><button>EDIT</button></a>
-<br>
+
+</div>
+
 
 {{/each}}
+</div>
 
-<a href="/celebrities/new">Crea tu celebrity</a>
+<a  class="no-deco" href="/celebrities/new"><button class="crear-button">Create your celebrity!</button>
+</a>
+
+</div>

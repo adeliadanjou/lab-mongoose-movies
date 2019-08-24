@@ -40,6 +40,7 @@ router.post('/celebrities', (req, res, next) => {
   const celebrity = new Celebrity({
     name: req.body.name,
     occupation: req.body.occupation,
+    image: req.body.image,
     catchPhrase: req.body.catchPhrase
   })
 

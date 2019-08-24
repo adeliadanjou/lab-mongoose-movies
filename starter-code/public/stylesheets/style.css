@@ -1,8 +1,130 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh; }
 
-a {
-  color: #00B7FF; }
+.index {
+  height: 100vh;
+  background-image: url("/images/index-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin: 0 auto; }
+
+.theCelebrities {
+  height: 100vh; }
+
+.text-index {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 auto;
+  text-shadow: 2px 2px 2px #353434; }
+
+.button-index {
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 2px #353434;
+  padding: 20px 40px; }
+
+.button-index:hover {
+  transform: scale(1.1);
+  transition: 3s; }
+
+.celebrities-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 20px; }
+
+.celebrities-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.celebrity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  width: 20%; }
+
+.celebrity-img {
+  width: 250px;
+  height: 300px;
+  -webkit-box-shadow: 9px 9px 5px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 5px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 9px 5px -7px rgba(0, 0, 0, 0.75); }
+
+.celebrity-details {
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 20px; }
+
+.celebrity-name {
+  text-decoration: none;
+  margin: 20px 0 5px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #090970; }
+
+.edit-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  text-decoration: none;
+  background-color: greenyellow;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75); }
+
+.icon-img {
+  width: 20px; }
+
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit; }
+
+.delete-div {
+  background-color: pink;
+  display: flex;
+  align-content: center;
+  padding: 5px 15px;
+  text-decoration: none;
+  background-color: #e72939;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75); }
+
+.crear-button {
+  background-color: blueviolet;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px; }
+
+.no-deco {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

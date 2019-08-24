@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 
 const CelebSchema = new Schema ({
-  name : String,
+  name : {type:String, unique: true},
   occupation: String,
   catchPhrase  : String
 })

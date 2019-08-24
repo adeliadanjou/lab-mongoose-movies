@@ -1,12 +1,12 @@
 const express = require('express');
-const router  = express.Router();
+const routerIndex  = express.Router();
 
 
 /* GET home page */
-router.get('/', (req, res, next) => {
+routerIndex.get('/', (req, res, next) => {
   res.render('index');
 });
 
 
 
-module.exports = router;
+module.exports = routerIndex;
